@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="form-text">
+            <h1 class="form-maintext">Introduce tus datos para crear una cuenta</h1>
+            <p class="form-subtext">Los valores marcados con un * son obligatorios</p>
+        </div>
+        <form action="/" method="post">
+
+            <label>NOMBRE*:
+                <input class="form-field" type="text" name="nombre" placeholder="Introduce tu nombre..." required />
+            </label>
+
+            <label>
+                PRIMER APELLIDO*:
+                <input class="form-field" type="text" name="primer apellido"
+                    placeholder="Introduce tu primer apellido..." required />
+            </label>
+
+            <label>
+                SEGUNDO APELLIDO:
+                <input class="form-field" type="text" name="segundo apellido"
+                    placeholder="Introduce tu segundo apellido..." />
+            </label>
+
+            <!--Pattern DNI: 12345678A-->
+            <label>
+                DNI:
+                <input class="form-field" type="text" name="DNI" placeholder="Introduce tu DNI..."
+                    pattern="[0-9]{8}[A-Za-z]{1}" minlength="9" maxlength="9" />
+            </label>
+
+            <button class="register-btn" type="text">REGISTRO</button>
+        </form>
+    </div>
+
+    </form>
+</body>
+
+</html>
